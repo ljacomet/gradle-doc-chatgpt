@@ -1,0 +1,37 @@
+Playground to have natural language questions with the specific context of recent Gradle documentation.
+
+[NOTE]
+====
+WARNING: This is inspired by the work from @stephanj and his https://github.com/stephanj/llm-talk#4b-llm--groovy--qna[Groovy example].
+I am not an experienced Python developer and so some of the instructions below might be redundant or un-necessary.
+The same goes for the Jupyter notebook itself.
+
+If you know better, PRs welcome.
+====
+
+## Install
+
+Installations instructions provided for MacOS Apple Silicon based machines.
+
+### Setup conda env and use Python 3.9
+
+Install miniconda from Homebrew:
+----
+> brew install miniconda
+> conda init "$(basename "${SHELL}")"
+----
+
+Setup our dedicated Python environment and some libraries:
+----
+> conda create --name jupyter python=3.9
+> conda activate jupyter
+> conda config --add channels conda-forge
+> conda config --set channel_priority strict
+> conda install -c conda-forge ipywidgets
+> ARCHFLAGS="-arch arm64" pip install hnswlib --compile --no-cache-dir
+----
+
+## Usage
+
+Follow instructions in the Jupyter notebook.
+Opening it in VSCode works just fine - once you install the suggested extensions.
