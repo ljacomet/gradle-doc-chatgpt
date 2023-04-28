@@ -1,8 +1,16 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
 Playground to have natural language questions with the specific context of recent Gradle documentation.
 
-[NOTE]
+[WARNING]
 ====
-WARNING: This is inspired by the work from @stephanj and his https://github.com/stephanj/llm-talk#4b-llm--groovy--qna[Groovy example].
+This is inspired by the work from @stephanj and his https://github.com/stephanj/llm-talk#4b-llm--groovy--qna[Groovy example].
 I am not an experienced Python developer and so some of the instructions below might be redundant or un-necessary.
 The same goes for the Jupyter notebook itself.
 
